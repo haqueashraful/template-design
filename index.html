@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Design</title>
+    <link rel="stylesheet" href="Styles/tempStyle.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+    <!-- fontAwesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-[#F0F1F7]">
+    
+    <header  class=" w-full fixed z-50 bg-white shadow-sm flex items-center justify-start">
+        <!-- nav -->
+        <div id="logo" class=" w-1/5 bg-[#111C43] z-50">
+            <h2 class="p-4 text-white font-extrabold border-b border-white flex justify-center items-center"><img class="w-8 h-8" src="toggle-logo.png" alt=""><span class="title"><span  class=" text-[#845BDE]">Y</span>NEX</span></h2>
+        </div>
+        <nav id="nav"  class=" w-4/5 bg-white px-5">
+            <div onclick="toggleBtn()">
+                <h2 id="open" class=" text-black"><i class="fa-solid fa-bars"></i></h2>
+                <h2 id="close" class=" text-black hidden"><i class="fa-solid fa-xmark"></i></h2>
+            </div>
+        </nav>
+    </header>
+  <section class="flex justify-start relative top-16">
+    <aside id="aside" class="w-1/5  bg-[#111C43] h-screen text-center ">
+       
+        <div class=" bg-[#111C43] text-left px-4 space-y-3">
+            <div class="">
+                <div class="space-y-2">
+                    <p class="p-1 uppercase text-[#5A658A] hidden text-sm">main</p>
+                    <details class="w-full" open>
+                        <summary class="text-white w-full list-none bg-[#1D284D] rounded-lg p-2"><i class=" fa-solid fa-house"></i><span class="title ml-3">DashBoard</span></summary>
+                        <ul id="Ulist" class="text-white ml-5 mb-1 title">
+                            <li class="list"><a>CRM</a></li>
+                            <li class="list"><a>Ecommerce</a></li>
+                            <li class="list"><a>Crypto</a></li>
+                            <li class="list"><a>Jobs</a></li>
+                            <li class="list"><a>NFT</a></li>
+                            <li class="list"><a>Sales</a></li>
+                            <li class="list"><a>Analytics</a></li>
+                            <li class="list"><a>Projects</a></li>
+                            <li class="list"><a>HRM</a></li>
+                            <li class="list"><a>Stocks</a></li>
+                            <li class="list"><a>Courses</a></li>
+                            <li class="list"><a>Personal</a></li>
+                        </ul>
+                    </details >
+                </div>
+    
+                <div class="space-y-2">
+                    <p class="p-1 uppercase hidden text-[#5A658A] text-sm">pages</p>
+                    <!-- pages details class="w-full" -->
+                    <details class="w-full">
+                        <summary class="text-white w-full list-none rounded-lg p-2"><i class="  fa-regular fa-file"></i><span class="title ml-3">Pages</span></summary>
+                        <ul class="text-white ml-5 mb-1">
+                            <li class="list"><a>About Us</a></li>
+                            <li class=" flex">
+                                <details class="w-full list-[circle]" >
+                                    <summary class="flex justify-between items-center"><li class="list-style ">Blog </li><i class="fa-solid fa-chevron-right p-0 text-xs"></i></summary>
+                                    <ul class="title">
+                                        <li class="list px-6"><a>Blog</a></li>
+                                        <li class="list px-6"><a>Blog Details</a></li>
+                                        <li class="list px-6"><a>Blog Create</a></li>
+                                    </ul>
+                                </details >
+                            </li>
+                            <li class="list"><a>Chats</a></li>
+                            <li class="list"><a>Contact</a></li>
+                            <li class="list"><a>Contact Us</a></li>
+                            <li class="flex">
+                                <details class="w-full">
+                                    <summary class="flex justify-between items-center"><li class="list-style ">Ecommerce </li><i class="fa-solid fa-chevron-right p-0 text-xs"></i></summary>
+                                    <ul>
+                                        <li class="list px-6"><a>Add Products</a></li>
+                                        <li class="list px-6"><a>Chard</a></li>
+                                        <li class="list px-6"><a>CheckOut</a></li>
+                                        <li class="list px-6"><a>Edit Products</a></li>
+                                        <li class="list px-6"><a>Order</a></li>
+                                        <li class="list px-6"><a>Orders</a></li>
+                                        <li class="list px-6"><a>Products</a></li>
+                                        <li class="list px-6"><a>Product </a></li>
+                                        <li class="list px-6"><a>Products List</a></li>
+                                        <li class="list px-6"><a>Wishlist</a></li>
+                                    </ul>
+                                </details >
+                            </li>
+                            <li class="flex">
+                                <details class="w-full">
+                                    <summary class="flex justify-between items-center"><li class="list-style ">Email </li><i class="fa-solid fa-chevron-right p-0 text-xs"></i></summary>
+                                    <ul>
+                                        <li class="list px-6"><a>Mail App</a></li>
+                                        <li class="list px-6"><a>Mail Settings</a></li>
+                                       
+                                    </ul>
+                                </details >
+                            </li>
+                            <li class="list"><a>Empty</a></li>
+                            <li class="list"><a>FAQ's</a></li>
+                            <li class="flex">
+                                <details class="w-full">
+                                    <summary class="flex justify-between items-center"><li class="list-style ">File Manager</li><i class="fa-solid fa-chevron-right p-0 text-xs"></i></summary>
+                                    <ul>
+                                        <li class="list px-6"><a>File Manager</a></li>                                       
+                                    </ul>
+                                </details >
+                            </li>
+                            <li class="flex">
+                                <details class="w-full">
+                                    <summary class="flex justify-between items-center"><li class="list-style ">Invoice </li><i class="fa-solid fa-chevron-right p-0 text-xs"></i></summary>
+                                    <ul>
+                                        <li class="list px-6"><a>Create Invoice</a></li>                                       
+                                        <li class="list px-6"><a>Invoice </a></li>                                       
+                                        <li class="list px-6"><a>Invoice List</a></li>                                       
+                                    </ul>
+                                </details >
+                            </li>
+                            <li class="list"><a>Landing</a></li>
+                            <li class="list"><a>Jobs Landing</a></li>
+                            <li class="list"><a>Notification</a></li>
+                            <li class="list"><a>Pricing</a></li>
+                            <li class="list"><a>Profile</a></li>
+                            <li class="list"><a>Reviews</a></li>
+                            <li class="list"><a>Term</a></li>
+                            <li class="list"><a>Term & Condition</a></li>
+                            <li class="list"><a>Timeline</a></li>
+                            <li class="list"><a>To Do List</a></li>
+                        </ul>
+                    </details >
+                        <!-- Task details class="w-full" -->
+                        <details class="w-full">
+                            <summary class="text-white w-full  list-none rounded-lg p-2"><i class="  fa-solid fa-list-check"></i><span class="title ml-3">Task</span></summary>
+                            <ul class="text-white ml-5 mb-1 title">
+                                <li class="list"><a>Kanban Board</a></li>
+                                <li class="list"><a>List View</a></li>
+                                <li class="list"><a>Task details</a></li>
+                            </ul>
+                        </details >
+                            <!-- Authentication details class="w-full" -->
+                        <details class="w-full">
+                            <summary class="text-white w-full list-none rounded-lg p-2"><i class="  fa-solid fa-fingerprint"></i><span class="title ml-3">Authentication</span></summary>
+                            <ul class="title text-white ml-5 mb-1">
+                                <li class="list"><a>Coming Soon</a></li>
+                                <li class="flex">
+                                    <details class="w-full">
+                                        <summary class="flex justify-between items-center"><li class="list-style ">Create Password </li><i class="fa-solid fa-chevron-right p-0 text-xs"></i></summary>
+                                        <ul>
+                                            <li class="list px-6"><a>Basic</a></li>                                       
+                                            <li class="list px-6"><a>Cover</a></li>                                       
+                                        </ul>
+                                    </details >
+                                </li>
+                                <li class="flex">
+                                    <details class="w-full">
+                                        <summary class="flex justify-between items-center"><li class="list-style ">Lock Screen </li><i class="fa-solid fa-chevron-right p-0 text-xs"></i></summary>
+                                        <ul>
+                                            <li class="list px-6"><a>Basic</a></li>                                       
+                                            <li class="list px-6"><a>Cover</a></li>                                       
+                                        </ul>
+                                    </details >
+                                </li>
+                                <li class="flex">
+                                    <details class="w-full">
+                                        <summary class="flex justify-between items-center"><li class="list-style ">Reset Password </li><i class="fa-solid fa-chevron-right p-0 text-xs"></i></summary>
+                                        <ul>
+                                            <li class="list px-6"><a>Basic</a></li>                                       
+                                            <li class="list px-6"><a>Cover</a></li>                                       
+                                        </ul>
+                                    </details >
+                                </li>
+                                <li class="flex">
+                                    <details class="w-full">
+                                        <summary class="flex justify-between items-center"><li class="list-style ">Sign In </li><i class="fa-solid fa-chevron-right p-0 text-xs"></i></summary>
+                                        <ul>
+                                            <li class="list px-6"><a>Basic</a></li>                                       
+                                            <li class="list px-6"><a>Cover</a></li>                                       
+                                        </ul>
+                                    </details >
+                                </li>
+                                <li class="flex">
+                                    <details class="w-full">
+                                        <summary class="flex justify-between items-center"><li class="list-style ">Sign Up </li><i class="fa-solid fa-chevron-right p-0 text-xs"></i></summary>
+                                        <ul>
+                                            <li class="list px-6"><a>Basic</a></li>                                       
+                                            <li class="list px-6"><a>Cover</a></li>                                       
+                                        </ul>
+                                    </details >
+                                </li>
+                                <li class="flex">
+                                    <details class="w-full">
+                                        <summary class="flex justify-between items-center"><li class="list-style ">Two Step Verification </li><i class="fa-solid fa-chevron-right p-0 text-xs"></i></summary>
+                                        <ul>
+                                            <li class="list px-6"><a>Basic</a></li>                                       
+                                            <li class="list px-6"><a>Cover</a></li>                                       
+                                        </ul>
+                                    </details >
+                                </li>
+                                <li class="list"><a>Under Maintenance</a></li>     
+                            </ul>
+                        </details >
+                        <!-- Error details class="w-full" -->
+                        <details class="w-full">
+                            <summary class="text-white w-full list-none rounded-lg p-2"><i class="  fa-solid fa-triangle-exclamation"></i><span class="title ml-3">Error</span></summary>
+                            <ul class="text-white ml-5 mb-1 title">
+                                <li class="list"><a>401 Error</a></li>
+                                <li class="list"><a>404 Error</a></li>
+                                <li class="list"><a>500 Error</a></li>
+                            </ul>
+                        </details >
+                </div>
+            </div>
+        </div>
+    </aside>
+   <main id="main" class="w-4/5">
+
+   </main>
+  </section>
+
+    <script src="Script/jsctipt.js"></script>
+</body>
+</html>
